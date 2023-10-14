@@ -29,3 +29,22 @@ bot.onText(/\/start/ , msg=>{
     )
   
   })
+
+//class for control pin out and on / off function
+  class LEDController {
+    constructor(pin) {
+      this.LED = new Gpio(pin, 'out');
+    }
+  
+    turnOn() {
+      this.LED.writeSync(1);
+    }
+  
+    turnOff() {
+      this.LED.writeSync(0);
+    }
+  }
+  
+  const led = new LEDController(17);
+  // led.turnOn();
+  
