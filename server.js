@@ -1,5 +1,5 @@
 import { Gpio } from 'onoff';
-var LED = new Gpio(17,'out');
+// var LED = new Gpio(17,'out'); //optional variable
 
 
 const TelegramBot = require('node-telegram-bot-api');
