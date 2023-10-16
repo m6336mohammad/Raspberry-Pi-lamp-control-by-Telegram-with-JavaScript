@@ -40,7 +40,7 @@ bot.onText(/\/start/ , msg=>{
       }else if(msg.text == 'off'){
         
       bot.sendMessage(msg.chat.id, 'LED is OFF banzen ')
-      turnOff()
+      led.turnOff()
         
         }
         
@@ -53,7 +53,7 @@ bot.onText(/\/start/ , msg=>{
             break;
           case 'OFF':
             bot.sendMessage(msg.chat.id, 'LED is OFF banzen ')
-            turnOff()
+            led.turnOff()
           break;
           
           case 'Abute':
